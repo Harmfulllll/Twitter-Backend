@@ -1,4 +1,3 @@
-import { hash } from "bcrypt";
 import mongoose from "mongoose";
 
 const tweetSchema = new mongoose.Schema(
@@ -8,12 +7,10 @@ const tweetSchema = new mongoose.Schema(
       required: true,
       max: [280, "Tweet cannot be more than 280 characters"],
     },
-    hashtags: [
-      {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "Hashtag",
-      },
-    ],
+    user: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "User",
+    },
   },
   { timestamps: true }
 );

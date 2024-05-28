@@ -6,9 +6,15 @@ const retweetSchema = new mongoose.Schema(
       type: mongoose.Schema.Types.ObjectId,
       ref: "User",
     },
-    tweet: {
+    onRetweet: {
+      type: String,
+      required: true,
+      enum: ["Tweet", "Comment"],
+    },
+    retweetable: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "Tweet",
+      required: true,
+      refPath: "onRetweet",
     },
   },
   { timestamps: true }

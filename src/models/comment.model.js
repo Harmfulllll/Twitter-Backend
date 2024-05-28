@@ -7,14 +7,26 @@ const commentSchema = new mongoose.Schema(
       required: true,
       max: [240, "Comment cannot be more than 240 characters"],
     },
-    tweet: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "Tweet",
-    },
     user: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "User",
     },
+    onComment: {
+      type: String,
+      required: true,
+      enum: ["Tweet", "Comment"],
+    },
+    commentAble: {
+      type: mongoose.Schema.Types.ObjectId,
+      required: true,
+      refPath: "onComment",
+    },
+    comments: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Comment",
+      },
+    ],
   },
   { timestamps: true }
 );

@@ -40,6 +40,7 @@ import tweetRoutes from "./src/routes/tweet.route.js";
 import followRoutes from "./src/routes/follow.route.js";
 import messageRoutes from "./src/routes/message.route.js";
 import commentRoutes from "./src/routes/comment.route.js";
+import timelineRoutes from "./src/routes/timeline.route.js";
 
 // Middleware
 
@@ -52,6 +53,7 @@ app.use("/api/v1/user/tweet", tweetRoutes);
 app.use("/api/v1/user/follow", followRoutes);
 app.use("/api/v1/user/message", messageRoutes);
 app.use("/api/v1/user/comment", commentRoutes);
+app.use("/api/v1/user/timeline", timelineRoutes);
 
 // Connect to the database
 const port = process.env.PORT || 3000;

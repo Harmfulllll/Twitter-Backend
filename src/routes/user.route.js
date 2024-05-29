@@ -1,3 +1,10 @@
+/*
+ * Title: user.route.js
+ * Description : User routes
+ * Author: Tanvir Hassan Joy
+ * Date: 2024-05-29 11:28:35
+ */
+
 import express from "express";
 import upload from "../middlewares/multer.middleware.js";
 import verifyJwt from "../middlewares/verify.middleware.js";

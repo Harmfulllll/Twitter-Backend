@@ -1,3 +1,10 @@
+/*
+ * Title: apiResponse.js
+ * Description : Custom response handler
+ * Author: Tanvir Hassan Joy
+ * Date: 2024-05-29 11:21:44
+ */
+
 class apiResponse {
   constructor(statusCode, data, message = "Success") {
     this.statusCode = statusCode;

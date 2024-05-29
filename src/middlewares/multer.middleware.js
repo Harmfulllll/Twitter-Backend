@@ -1,3 +1,10 @@
+/*
+ * Title: multer.middleware.js
+ * Description : Multer middleware
+ * Author: Tanvir Hassan Joy
+ * Date: 2024-05-29 11:30:19
+ */
+
 import multer from "multer";
 
 const storage = multer.diskStorage({

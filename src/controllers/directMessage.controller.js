@@ -1,3 +1,10 @@
+/*
+ * Title: directMessage.controller.js
+ * Description : Direct Message controller
+ * Author: Tanvir Hassan Joy
+ * Date: 2024-05-29 11:32:19
+ */
+
 import directMessage from "../models/directMessage.model.js";
 import apiError from "../utils/apiError.js";
 import apiResponse from "../utils/apiResponse.js";

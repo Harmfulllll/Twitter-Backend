@@ -1,8 +1,14 @@
+/*
+ * Title: user.controller.js
+ * Description : User controller
+ * Author: Tanvir Hassan Joy
+ * Date: 2024-05-29 11:30:53
+ */
+
 import apiError from "../utils/apiError.js";
 import apiResponse from "../utils/apiResponse.js";
 import User from "../models/user.model.js";
 import cloudinary from "../utils/cloudinary.js";
-import upload from "../middlewares/multer.middleware.js";
 
 const register = async (req, res) => {
   try {
@@ -107,8 +113,8 @@ const updateBio = async (req, res) => {
 
 const getProfile = async (req, res) => {
   try {
-    const { username } = req.params;
-    const user = await User.findOne({ username }).select("-password");
+    const id = res.user._id;
+    const user = await User.findOne({ _id: id }).select("-password");
     if (!user) {
       return res.status(404).json(new apiError(404, "User not found"));
     }

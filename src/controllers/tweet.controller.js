@@ -1,3 +1,10 @@
+/*
+ * Title: tweet.controller.js
+ * Description : Tweet controller
+ * Author: Tanvir Hassan Joy
+ * Date: 2024-05-29 11:31:37
+ */
+
 import apiError from "../utils/apiError.js";
 import apiResponse from "../utils/apiResponse.js";
 import tweetModel from "../models/tweet.model.js";

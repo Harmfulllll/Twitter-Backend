@@ -1,3 +1,9 @@
+/*
+ * Title: verify.middleware.js
+ * Description : Verify JWT token
+ * Author: Tanvir Hassan Joy
+ * Date: 2024-05-29 11:30:36
+ */
 import apiError from "../utils/apiError.js";
 import apiResponse from "../utils/apiResponse.js";
 import User from "../models/user.model.js";

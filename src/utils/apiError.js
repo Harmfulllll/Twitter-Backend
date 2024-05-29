@@ -1,3 +1,10 @@
+/*
+ * Title: apiError.js
+ * Description : Custom error handler
+ * Author: Tanvir Hassan Joy
+ * Date: 2024-05-29 11:21:26
+ */
+
 class apiError extends Error {
   constructor(statusCode, message = "", errors = [], stack = "") {
     super(message);

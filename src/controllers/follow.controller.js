@@ -1,3 +1,10 @@
+/*
+ * Title: follow.controller.js
+ * Description : Follow controller
+ * Author: Tanvir Hassan Joy
+ * Date: 2024-05-29 11:32:08
+ */
+
 import followModel from "../models/follow.model.js";
 import userModel from "../models/user.model.js";
 import apiError from "../utils/apiError.js";

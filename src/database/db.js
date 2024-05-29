@@ -1,3 +1,10 @@
+/*
+ * Title: db.js
+ * Description : Database connection
+ * Author: Tanvir Hassan Joy
+ * Date: 2024-05-29 11:30:05
+ */
+
 import mongoose from "mongoose";
 import apiResponse from "../utils/apiResponse.js";
 import apiError from "../utils/apiError.js";

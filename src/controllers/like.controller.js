@@ -1,3 +1,10 @@
+/*
+ * Title: like.controller.js
+ * Description : Like controller
+ * Author: Tanvir Hassan Joy
+ * Date: 2024-05-29 11:32:00
+ */
+
 import apiError from "../utils/apiError.js";
 import apiResponse from "../utils/apiResponse.js";
 import tweetModel from "../models/tweet.model.js";

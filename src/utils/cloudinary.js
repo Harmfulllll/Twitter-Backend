@@ -1,4 +1,12 @@
-import { v2 } from "cloudinary";
+/*
+ * Title: cloudinary.js
+ * Description : Cloudinary configuration
+ * Author: Tanvir Hassan Joy
+ * Date: 2024-05-29 11:23:01
+ */
+
+import { v2 as cloudinary } from "cloudinary";
+import LOADIPHLPAPI from "dns";
 import fs from "fs";
 
 cloudinary.config({
@@ -6,7 +14,6 @@ cloudinary.config({
   api_key: process.env.CLOUDINARY_API_KEY,
   api_secret: process.env.CLOUDINARY_API_SECRET,
 });
-
 const uploadFile = async (localFilePath) => {
   try {
     if (!localFilePath) return null;

@@ -53,7 +53,7 @@ The application uses various security measures such as HTTPS, input sanitization
 
 1.Clone the repository
 
-`git clone https://github.com/Harmfulllll/Expense-Tracker-Backend.git `
+`git clone https://github.com/Harmfulllll/Twitter-Backend.git `
 
 2.Install NPM packages
 `npm install`
